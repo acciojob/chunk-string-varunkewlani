@@ -1,7 +1,11 @@
 function stringChop(str, size) {
-	
+	 
 	let str2=""
 	let arr=[]
+	if(str===null)
+	{
+		return arr
+	}
 	for(let i=0;i<str.length;i++)
 		{
 			if(str.length<size)
@@ -22,6 +26,7 @@ function stringChop(str, size) {
 	{
 		arr.push(str2)
 	}
+	
 	return arr
   // your code here
 }
