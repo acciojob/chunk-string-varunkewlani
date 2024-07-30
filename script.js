@@ -12,15 +12,16 @@ function stringChop(str, size) {
 			{
 				return str
 			}
-			else if(str2.length==size)
+			else if(str2.length<size)
+			{
+				str2+=str[i];
+			}
+			else 
 			{
 				arr.push(str2)
 				str2=str[i]
 			}
-			else
-			{
-				str2+=str[i];
-			}
+			
 		}
 	if(str.length>0)
 	{
